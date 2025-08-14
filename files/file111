@@ -19,5 +19,5 @@ if __name__ == "__main__":
 
     root1, root2 = solve_quadratic(a, b, c)
 
-    print(f"The roots are: {root1} and {root2}")
+    print(f"if finded The roots are: {root1} and {root2}")
 
