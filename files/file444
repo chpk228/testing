@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class SquareOfSum {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Calculate (a + b)^2");
+
+        System.out.print("Enter value of a: ");
+        double a = scanner.nextDouble();
+
+        System.out.print("Enter value of b: ");
+        double b = scanner.nextDouble();
+
+        double result = Math.pow(a + b, 2); // or (a + b) * (a + b)
+
+        // Optional: Show expanded form
+        double expanded = a*a + 2*a*b + b*b;
+
+        System.out.print
+
