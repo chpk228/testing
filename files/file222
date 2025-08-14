@@ -7,13 +7,13 @@ public class QuadraticEquationSolver {
 
         System.out.println("Quadratic Equation: ax² + bx + c = 0");
 
-        System.out.print("Enter a: ");
+        System.out.print("Enter a value: ");
         double a = scanner.nextDouble();
 
-        System.out.print("Enter b: ");
+        System.out.print("Enter b value: ");
         double b = scanner.nextDouble();
 
-        System.out.print("Enter c: ");
+        System.out.print("Enter c value: ");
         double c = scanner.nextDouble();
 
         double discriminant = (b * b) - (4 * a * c);
