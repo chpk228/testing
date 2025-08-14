@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class PowerFactorCalculator {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Power Factor Calculator");
+        System.out.print("Enter Real Power (kW): ");
+        double realPower = scanner.nextDouble();
+
+        System.out.print("Enter Apparent Power (kVA): ");
+        double apparentPower = scanner.nextDouble();
+
+        if (apparentPower == 0) {
+            System.out.println("Apparent Power cannot be zero.");
+        } else {
+            double powerFactor = realPower / apparentPower;
+
+            System.out.printf("Power Factor = %.3f\n", powerFactor);
+            System.out.printf("Power Factor (in percentage) = %.2f%%\n", powerFactor * 100);
+
+            if (powerFactor >= 0.95) {
+                System.out.println("Power Factor is good.");
+            } else if (powerFactor >= 0.85) {
+                System.out.println("Power Factor is acceptable, consider improving.");
+            } else {
+                System.out.println("Power Factor is poor. Consider power factor correction.");
+            }
+        }
+
+        scanner.close();
+    }
+}
+
