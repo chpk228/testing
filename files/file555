@@ -1,0 +1,21 @@
+class ComplexNumber {
+    double real;
+    double imaginary;
+
+    // Constructor
+    public ComplexNumber(double r, double i) {
+        this.real = r;
+        this.imaginary = i;
+    }
+
+    // Display method
+    public void display() {
+        if (imaginary >= 0)
+            System.out.println(real + " + " + imaginary + "i");
+        else
+            System.out.println(real + " - " + (-imaginary) + "i");
+    }
+
+    // Add two complex numbers
+    pu
+
