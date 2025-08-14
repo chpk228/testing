@@ -13,8 +13,8 @@ def solve_quadratic(a, b, c):
 if __name__ == "__main__":
     print("Quadratic Equation: ax² + bx + c = 0")
 
-    a = float(input("Enter a: "))
-    b = float(input("Enter b: "))
+    a = float(input("Enter a value: "))
+    b = float(input("Enter b value: "))
     c = float(input("Enter c: "))
 
     root1, root2 = solve_quadratic(a, b, c)
